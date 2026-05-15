@@ -61,7 +61,9 @@ export default function PostList() {
           <button
             className="btn btn-primary"
             onClick={() => navigate("/posts/new")}
-          ></button>
+          >
+            ✏️ 글쓰기
+          </button>
         )}
       </div>
 
