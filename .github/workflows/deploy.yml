@@ -48,7 +48,7 @@ jobs:
       #    uses로 AWS 공식 자격증명 action 사용
       #    with으로 Secrets에 저장한 키값들을 action에 전달
       #    이 설정이 없으면 ECR 로그인, 이미지 push 전부 권한 오류 발생
-      - name: AWSKEY
+      - name: AWS 자격증명
         uses: aws-actions/configure-aws-credentials@v2
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }} # IAM 사용자 액세스 키
